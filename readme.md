@@ -10,7 +10,7 @@ from microPID import PID
 import time
 dt = 1
 
-controller = PID(Kp = 1, Ki = 1, Kd = 1)
+controller = PID(kp = 1, ki = 1, kd = 1)
 
 while 1:
     inputVar = system.getOutput()
@@ -30,7 +30,7 @@ from microPID import PID
 import time
 dt = 1
 
-controller = PID(Kp = 1, Ki = 1, Kd = 1,setpoint = 100, output_limits=(-100,100))
+controller = PID(kp = 1, ki = 1, kd = 1,setpoint = 100, output_limits=(-100,100))
 
 while 1:
     inputVar = system.getOutput()
